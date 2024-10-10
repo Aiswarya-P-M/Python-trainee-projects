@@ -13,4 +13,3 @@ def valid_adjusent(input_str: str) -> bool:
     return not stack  # Return True if the stack is empty
 
 print(valid_adjusent('()[]{}'))         
- 
