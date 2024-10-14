@@ -119,20 +119,23 @@ reversed_string = s[::-1]  # Output: 'gnimmargorP nohtyP'
  
 ***a.6 Slicing with negative indices***
 
-``` python s = "Python"
+``` python 
+    s = "Python"
     substring = s[-6:-3]  # Output: 'Pyt' (from index -6 to -4)
 ```
 
 ***a.7 Combining negative indices with step:***
 
-``` python s = "Python"
+``` python 
+    s = "Python"
     substring = s[-6:-3]  # Output: 'Pyt' (from index -6 to -4)
 ```
 ***b. Uppercase***
 
 The upper() method returns the string in upper case:
 
-```python a = "Hello, World!"
+```python 
+    a = "Hello, World!"
     print(a.upper())
 ```
 
@@ -140,14 +143,16 @@ The upper() method returns the string in upper case:
 
 The lower() method returns the string in lower case:
 
-```python a = "Hello, World!"
+```python 
+    a = "Hello, World!"
     print(a.lower())
 ```
 
 ***d. Concatenation***
 
 To concatenate, or combine, two strings you can use the + operator.
-```python a = "Hello"
+```python 
+    a = "Hello"
     b = "World"
     c = a + b
     print(c) #output HelloWorld
@@ -158,7 +163,8 @@ To concatenate, or combine, two strings you can use the + operator.
 To get the length of a string, use the len
 () function.
 
-```python a = "Hello, World!"
+```python 
+    a = "Hello, World!"
     print(len(a)) #output 13
 ```
 
@@ -168,41 +174,47 @@ To get the length of a string, use the len
 
 ***a.1 append()*** : Adds an element to the end of the list.
 
-```python my_list = [1, 2, 3]
-   my_list.append(4)
-   print(my_list)  # Output: [1, 2, 3, 4]
+```python 
+    my_list = [1, 2, 3]
+    my_list.append(4)
+    print(my_list)  # Output: [1, 2, 3, 4]
 ```   
 
 ***a.2 insert()*** : Inserts an element at a specific index.
 
-```python my_list.insert(1, 'a')
-   print(my_list)  # Output: [1, 'a', 2, 3, 4]
+```python 
+    my_list.insert(1, 'a')
+    print(my_list)  # Output: [1, 'a', 2, 3, 4]
 ```
 
 ***a.3 extend()*** : Adds multiple elements (from another list or iterable) to the end of the list.
 
-```python my_list.extend([5, 6])
-   print(my_list)  # Output: [1, 'a', 2, 3, 4, 5, 6]
+```python 
+    my_list.extend([5, 6])
+    print(my_list)  # Output: [1, 'a', 2, 3, 4, 5, 6]
 ```
 
 ***b. Removing Elements from a List***
 
 ***b.1 remove()*** : Removes the first occurrence of a specified value.
 
-```python my_list.remove('a')
+```python 
+    my_list.remove('a')
     print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
 ```
 
 ***b.2 pop()*** : Removes and returns the element at a specified index. If no index is specified, it removes the last element.
 
-```python popped_element = my_list.pop(2)
-   print(popped_element)  # Output: 3
-   print(my_list)  # Output: [1, 2, 4, 5, 6]
+```python 
+    popped_element = my_list.pop(2)
+    print(popped_element)  # Output: 3
+    print(my_list)  # Output: [1, 2, 4, 5, 6]
 ```
 
 ***b.3 clear()*** : Removes all elements from the list.
 
-```python my_list.clear()
+```python 
+    my_list.clear()
     print(my_list)  # Output: []
 ```
 
@@ -210,30 +222,34 @@ To get the length of a string, use the len
 
 ***c.1 Indexing*** : You can modify an element by directly accessing it using its index.
 
-```python my_list = [1, 2, 3]
-   my_list[1] = 'b'
-   print(my_list)  # Output: [1, 'b', 3]
+```python 
+    my_list = [1, 2, 3]
+    my_list[1] = 'b'
+    print(my_list)  # Output: [1, 'b', 3]
 ```
 
 ***c.2 Slicing*** : Modify multiple elements at once using slicing.
 
-```python my_list[1:3] = [20, 30]
-   print(my_list)  # Output: [1, 20, 30]
+```python 
+    my_list[1:3] = [20, 30]
+    print(my_list)  # Output: [1, 20, 30]
 ```
 
 ***d. Length of list***
 
 len(): Returns the number of elements in the list.
 
-```python length = len(my_list)  # Output: 3
+```python 
+    length = len(my_list)  # Output: 3
 ```
 
 ***e.reverse of a list***
 
 reverse(): Reverses the elements of the list in place.
 
-```python my_list.reverse()
-   print(my_list)  # Output: [5, 4, 3, 2, 1]
+```python 
+    my_list.reverse()
+    print(my_list)  # Output: [5, 4, 3, 2, 1]
 ```
 
 ***f. Join Two Lists***
@@ -241,7 +257,8 @@ reverse(): Reverses the elements of the list in place.
 There are several ways to join, or concatenate, two or more lists in Python.
 One of the easiest ways are by using the + operator.
 
-```python list1 = ["a", "b", "c"]
+```python 
+list1 = ["a", "b", "c"]
 list2 = [1, 2, 3]
 list3 = list1 + list2
 print(list3) #output ['a', 'b', 'c', 1, 2, 3]
@@ -254,22 +271,25 @@ In Python, a tuple is an immutable, ordered collection of elements, similar to a
 ***a. Accessing Elements***
 
 You can access tuple elements by their index, similar to lists:
-```python my_tuple = (10, 20, 30, 40)
+```python 
+    my_tuple = (10, 20, 30, 40)
     print(my_tuple[1])  # Output: 20
 ```
 
 You can also use negative indexing to access elements from the end:
 
-```python my_tuple = (10, 20, 30, 40)
-   print(my_tuple[-1])  # Output: 40
+```python 
+    my_tuple = (10, 20, 30, 40)
+    print(my_tuple[-1])  # Output: 40
 ```
 
 ***b. Slicing***
 
 You can slice a tuple to get a subset of its elements:
 
-```python my_tuple = (10, 20, 30, 40, 50)
-   sub_tuple = my_tuple[1:4]  # Output: (20, 30, 40)
+```python 
+    my_tuple = (10, 20, 30, 40, 50)
+    sub_tuple = my_tuple[1:4]  # Output: (20, 30, 40)
 ```
 
 Slicing can also use negative indices and step:
@@ -282,16 +302,18 @@ sub_tuple = my_tuple[::-1]  # Reverses the tuple: (50, 40, 30, 20, 10)
 
 You can concatenate two or more tuples using the + operator:
 
-```python tuple1 = (1, 2)
-   tuple2 = (3, 4)
-   new_tuple = tuple1 + tuple2  # Output: (1, 2, 3, 4)
+```python 
+    tuple1 = (1, 2)
+    tuple2 = (3, 4)
+    new_tuple = tuple1 + tuple2  # Output: (1, 2, 3, 4)
 ```
 
 ***d. Length of a Tuple***
 
 You can find out how many elements are in a tuple using the len() function:
 
-```python my_tuple = (1, 2, 3)
+```python 
+    my_tuple = (1, 2, 3)
     print(len(my_tuple))  # Output: 3
 ```
 
@@ -315,10 +337,11 @@ Using Concatenatio we can create a new tuple by concatenating the existing tuple
 
 Tuples are unchangeable, so you cannot remove items from it, but you can use the same workaround as we used for changing and adding tuple items:
 
-```python thistuple = ("apple", "banana", "cherry")
-   y = list(thistuple)
-   y.remove("apple")
-   thistuple = tuple(y)
+```python 
+    thistuple = ("apple", "banana", "cherry")
+    y = list(thistuple)
+    y.remove("apple")
+    thistuple = tuple(y)
 ```
 
 Or you can delete the tuple completely:
