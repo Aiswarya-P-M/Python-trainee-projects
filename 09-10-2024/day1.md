@@ -84,7 +84,8 @@ step: The step (optional), which determines the stride or interval between chara
 
 ***a.1 Slicing with start and stop***
 
-```s = "Python Programming"
+```python
+    s = "Python Programming"
     substring = s[0:6]  # Output: 'Python'
 ```
 ***a.2 Omitting the start index***
