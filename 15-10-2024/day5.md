@@ -218,7 +218,7 @@ arr=nums[diff:]+nums[:diff]
 print("The rotated array is:",arr)
 ```
 
-### ***Code***
+### ***Output***
 ```python
 The rotated array is: [5, 6, 7, 1, 2, 3, 4]
 ```
